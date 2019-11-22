@@ -27,7 +27,13 @@ export default new Router({
     },
     {
       path:'/my',
-      component:my
+      component:my,
+      children:[
+        {
+          path:'login',
+          component:Login
+        }
+      ]
     }
   ]
 })

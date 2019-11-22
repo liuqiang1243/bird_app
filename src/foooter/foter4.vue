@@ -1,6 +1,8 @@
 <template>
 <div>
     {{d}}
+    <router-link to='/my/login'>登录</router-link>
+    <router-view></router-view>
 </div>
     
 </template>
