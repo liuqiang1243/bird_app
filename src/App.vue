@@ -1,11 +1,16 @@
 <template>
   <div id="app">
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Footer from './foooter/footer'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    Footer
+  }
 }
 </script>
 
