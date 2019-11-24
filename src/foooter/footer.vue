@@ -1,5 +1,6 @@
 <template>
-    <div> <router-view></router-view>
+    <div> 
+      <router-view></router-view>
     <div class="footer">
       <router-link to="/home" tag="span">
       <i class="iconfont icon-51"></i>

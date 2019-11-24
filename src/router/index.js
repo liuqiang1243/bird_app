@@ -5,8 +5,8 @@ import home from "../../src/foooter/foter1"
 import merchant from "../../src/foooter/foter2"
 import order from "../../src/foooter/foter3"
 import my from "../../src/foooter/foter4"
+import Message from '../components/my/message'
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path:'/home',
-      component:home
+      component:home,
     },
     {
       path:'/merchant',
@@ -28,12 +28,15 @@ export default new Router({
     {
       path:'/my',
       component:my,
-      children:[
-        {
-          path:'login',
-          component:Login
-        }
-      ]
+      name:'my'
+    },
+    {
+      path: '/login',
+      component: Login
+    },
+    {
+      path:'/message/:id',
+      component: Message
     }
   ]
 })
