@@ -1,5 +1,5 @@
 <template>
-    <div> <router-view></router-view>
+    <div> 
     <div class="footer">
       <router-link to="/home" tag="span">
       <i class="iconfont icon-51"></i>
@@ -9,7 +9,7 @@
     <router-link to="/merchant" tag="span">
      <i class="iconfont icon-huiyuan"></i>
      <br>
-     会员
+     商家
     </router-link>
     <router-link to="/order" tag="span">
     <i class="iconfont icon-dingdanguanli"></i>
@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-    
+    name:'Footer'
 }
 </script>
 
@@ -39,6 +39,7 @@ export default {
      text-align: center;
      display: flex;
      flex-direction: row;
+     background: #fff;
 }
 span{
    flex: 1;
