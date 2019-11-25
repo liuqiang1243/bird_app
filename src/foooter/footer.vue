@@ -28,7 +28,6 @@ export default {
     
 }
 </script>
-
 <style lang="" scoped>
 .footer{
       margin: 0;

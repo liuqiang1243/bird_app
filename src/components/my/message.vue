@@ -121,6 +121,9 @@ export default {
 }
 </script>
 <style lang="less" scope>
+    .mint-popup{
+        height: 100%;
+    }
     .quit{
         position: fixed;
         bottom: 100px;
@@ -158,8 +161,8 @@ export default {
         border-bottom: 1px solid #F0F0F0;
     }
     .v-modal{
-        background-color: white;
-        opacity: 1;
+        background-color: black;
+        opacity: 0.5;
     }
     .mint-popup{
         left: 0;
