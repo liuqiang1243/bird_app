@@ -45,7 +45,7 @@
             <ul>
                 <li>
                     <i class="iconfont icon-zuobiao"></i>
-                    <p>我的地址</p>
+                    <router-link to="" tag="p"> 我的地址</router-link>
                 </li>
                 <li>
                     <i class="iconfont icon-zuji"></i>

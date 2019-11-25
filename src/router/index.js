@@ -6,6 +6,7 @@ import merchant from "../../src/foooter/foter2"
 import order from "../../src/foooter/foter3"
 import my from "../../src/foooter/foter4"
 import Message from '../components/my/message'
+import Address from '../components/my/address'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -28,7 +29,8 @@ export default new Router({
     {
       path:'/my',
       component:my,
-      name:'my'
+      name:'my',
+      children: [{ path: 'address', component: Address}]
     },
     {
       path: '/login',
