@@ -7,6 +7,7 @@ import order from "../../src/foooter/foter3"
 import my from "../../src/foooter/foter4"
 import Message from '../components/my/message'
 import Address from '../components/my/address'
+import Map from '../components/my/map'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -30,7 +31,14 @@ export default new Router({
       path:'/my',
       component:my,
       name:'my',
-      children: [{ path: 'address', component: Address}]
+    },
+    {
+      path: '/map',
+      component: Map,
+    },
+    {
+      path: '/address/:id',
+      component: Address
     },
     {
       path: '/login',

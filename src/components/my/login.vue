@@ -112,13 +112,14 @@ export default {
             this.$router.back()
         },
         gain(){
-            if(this.n == 0){
+            if(/^1\d{10}$/.test(this.phone)){
+                if(this.n == 0){
                 this.n = 30
                 for(let i =0;i<6;i++){
                 this.num += parseInt(Math.random()*10)
             }
             console.log(this.num)
-            axios.get(`http://sms.106jiekou.com/utf8/sms.aspx?account=MisLiu&password=123456&mobile=${this.phone}&content=您的订单编码：${this.num}。如需帮助请联系客服。`).then((res)=>{
+            axios.get(`http://sms.106jiekou.com/utf8/sms.aspx?account=Mrwang&password=123456&mobile=${this.phone}&content=您的订单编码：${this.num}。如需帮助请联系客服。`).then((res)=>{
                     // this.list = res.data
                     // console.log(res)
                 }).catch((err) => {//调取失败后执行catch的回调，err是错误信息
@@ -131,6 +132,7 @@ export default {
                         this.num = ''
                     }
                 },1000)
+            }
             }
         }
     },

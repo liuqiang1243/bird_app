@@ -14,14 +14,6 @@ export default {
   components:{
     Footer
   },
-  created() {
-     axios.get(`https://restapi.amap.com/v3/ip?ip=114.247.50.2&output=xml&key=c152b125b969bad141cbba50971ac8e1`).then((res)=>{
-                    // this.list = res.data
-                    console.log(res.data)
-                }).catch((err) => {//调取失败后执行catch的回调，err是错误信息
-                    console.log(err);
-                })
-  },
 }
 </script>
 

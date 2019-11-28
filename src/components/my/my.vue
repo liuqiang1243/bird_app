@@ -1,11 +1,11 @@
 <template>
     <div id="my">
         <header>
-                <span class="left" @click="picture">
+                <span class="left1" @click="picture">
                     <i class="iconfont icon-birdxiaoniao">
                         <mt-actionsheet
                 :actions="actions"
-                v-model="sheetVisible">
+                v-model="sheetVisible" @click="qq">
                 </mt-actionsheet>
                     </i>
                 </span>
@@ -22,7 +22,7 @@
         </header>
         <div class="money">
             <p class="clear"><span class="left">我的钱包</span><span class="right">进入钱包></span></p>  
-            <ul>
+            <ul class="ul1">
                 <li>
                     <p class="top">10万元</p>
                     <p class="center">借钱</p>
@@ -42,10 +42,10 @@
         </div>
         <div class="money">
             <span class="weight">我的功能</span>
-            <ul>
+            <ul class="ul1">
                 <li>
                     <i class="iconfont icon-zuobiao"></i>
-                    <router-link to="" tag="p"> 我的地址</router-link>
+                    <router-link to="/map" tag="p"> 我的地址</router-link>
                 </li>
                 <li>
                     <i class="iconfont icon-zuji"></i>
@@ -65,6 +65,7 @@
                     <span>我的评价</span>
             </p>
         </div>
+        <!-- <p class="bd"><input type="file" name="" id=""></p> -->
     </div>
 </template>
 <script>
@@ -76,8 +77,8 @@ export default {
         return{
             name:'登录/注册',
             login:'/login',
-            actions:[{name:'拍照'},{name:'从相机中选择'}],
-            sheetVisible:false
+            actions:[{name:'拍照'},{name:'从相机中选择',method:this.qq}],
+            sheetVisible:false,
         }
     },
     created() {
@@ -103,12 +104,23 @@ export default {
     methods: {
         picture(){
             this.sheetVisible = true
+        },
+        qq(){
+        
         }
     },
 
 }
 </script>
 <style lang="less" scope>
+    .bd{
+        position: absolute;
+        bottom: 10px;
+        z-index: 22000;
+        // input{
+            
+        // }
+    }
     #my{
         width: 100%;
         background-color: #F5F5F5;
@@ -120,7 +132,7 @@ export default {
             margin-top: 20px;
             background-color: #FAFAFA;
             border-radius: 4px;
-            .left{
+            .left1{
                 margin-left:10px;
                 margin-right: 10px;
                 .iconfont{
@@ -168,7 +180,7 @@ export default {
                 color:#666561;
                 font-size: 14px;
             }
-            ul{
+            .ul1{
                 margin-top: 10px;
                 font-size: 14px;
                 list-style: none;

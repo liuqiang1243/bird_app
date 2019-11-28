@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="message">
         <header>
             <span class="iconfont icon-fanhui fh" @click="gg"></span>
             <mt-header title="我的账号">
@@ -121,7 +121,8 @@ export default {
 }
 </script>
 <style lang="less" scope>
-    .mint-popup{
+    #message{
+        .mint-popup{
         height: 100%;
     }
     .quit{
@@ -200,4 +201,6 @@ export default {
             }
         }
     }
+    }
+    
 </style>
