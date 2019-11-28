@@ -9,8 +9,7 @@
       <img src="./imges/shaobing.png" alt="" width="80px" height="60px">
       <img src="./imges/shaobing.png" alt="" width="80px" height="60px">
       <div>
-      <b>￥19</b>
-      <p>共2件</p>
+      <b>￥19</b><p>共2件</p>
       </div>
     </div>
     <div class="order-text">
