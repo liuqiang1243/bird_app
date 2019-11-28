@@ -69,6 +69,7 @@ export default {
   width:100%;
   background:#f2f2f2;
   margin-bottom: 10rem;
+  height: 40rem;
 }
 .order-dome{
   background: #fff;

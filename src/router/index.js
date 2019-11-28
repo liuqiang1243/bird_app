@@ -8,6 +8,7 @@ import my from "../../src/foooter/foter4"
 import Order from "../components/order/Order"
 import Appraise from "../components/order/Appraise"
 import Reimburse from "../components/order/Reimburse"
+import Fulfill from "../components/order/Fulfill"
 Vue.use(Router)
 
 export default new Router({
@@ -38,6 +39,11 @@ export default new Router({
         {
           path:'reimburse',
           component:Reimburse
+        },
+        {
+          path:'fulfill/:id',
+    
+          component:Fulfill
         }
 
       ]
