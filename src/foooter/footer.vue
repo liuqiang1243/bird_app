@@ -3,21 +3,21 @@
       <router-view></router-view>
     <div class="footer">
       <router-link to="/home" tag="span">
-      <i class="iconfont icon-51"></i>
+      <i class="iconfont icon-yemian-copy-copy"></i>
       <br>
       首页
       </router-link>
-    <router-link to="/merchant" tag="span">
-     <i class="iconfont icon-huiyuan"></i>
+    <router-link to="/xian" tag="span">
+     <i class="iconfont icon-huiyuan-"></i>
      <br>
      会员
     </router-link>
     <router-link to="/order" tag="span">
-    <i class="iconfont icon-dingdanguanli"></i>
+    <i class="iconfont icon-dingdanguanli-"></i>
     <br>
     订单</router-link>
     <router-link to="/my" tag="span">
-      <i class="iconfont icon-daishu"></i>
+      <i class="iconfont icon-icon-"></i>
       <br>
       我的
     </router-link>
@@ -25,7 +25,6 @@
 </template>
 <script>
 export default {
-    
 }
 </script>
 <style lang="" scoped>
@@ -39,10 +38,14 @@ export default {
      text-align: center;
      display: flex;
      flex-direction: row;
+     background: white;
 }
 span{
    flex: 1;
    color: dimgray;
+}
+i{
+  font-size: 20px;
 }
 .iconfont{
   font-size: 20px;

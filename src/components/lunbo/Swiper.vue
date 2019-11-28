@@ -1,17 +1,15 @@
 <template>
   <swiper :options="swiperOption">
-    <swiper-slide v-for="(slide, index) in swiperImgs" :key="index">
-  
-      <img :src="slide.src"/>
+    <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
+      <img :src="slide"/>
      </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
+
   </swiper>
 </template>
-
 <script>
   export default {
     name: 'carousel',
-    props:['swiperImgs'],
     data() {
       return {
         swiperOption:{
@@ -24,10 +22,11 @@
                 //滑动速度
                 speed:1000,
                 // delay:1000
-                
+
                 observeParents: true,
-                
-            }
+
+            },
+        swiperSlides: ["../../../static/images/lb1.jpg","../../../static/images/lb2.jpg","../../../static/images/lb3.jpg","../../../static/images/lb4.jpg",]
       }
     }
   }
@@ -37,4 +36,9 @@
    width: 100%;
    display: block;
  }
+  .swiper-container{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
 </style>

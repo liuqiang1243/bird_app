@@ -1,0 +1,74 @@
+{
+    "hotlist": [
+        {  "bookImg":"../../static/image/IMG_8586.JPG",
+            "bookName": "全都是当天做当天卖的",
+            "bookInfo":"mingsangchenjing",
+            "bookTu":"../../../static/image/IMG_8594.JPG",
+            "bookXin":"../../../static/image/xin.png",
+            "bookId":1
+        },
+      {  "bookImg":"../../static/image/IMG_8587.JPG",
+            "bookName": "物美好吃的，巧克力面包",
+            "bookInfo":"yunzhongyang",
+           "bookTu":"../../static/image/IMG_8595.JPG",
+           "bookXin":"../../../static/image/xin.png",
+            "bookId":2
+        },
+      {  "bookImg":"../../static/image/IMG_8588.JPG",
+            "bookName": "强推物美的蛋糕",
+            "bookInfo":"Ciel爱吃西柚",
+        "bookTu":"../../static/image/IMG_8594.JPG",
+        "bookXin":"../../../static/image/xin.png",
+            "bookId":3
+        },
+      {  "bookImg":"../../static/image/IMG_8589.JPG",
+        "bookName": "印象美食",
+        "bookInfo":"无敌小吃货",
+        "bookTu":"../../static/image/IMG_8595.JPG",
+        "bookXin":"../../../static/image/xin.png",
+        "bookId":4
+        },
+      {  "bookImg":"../../static/image/IMG_8590.JPG",
+            "bookName": "这可能是北京最好逛最有意思的商场没有之一",
+            "bookInfo":"小小妮",
+        "bookTu":"../../static/image/IMG_8594.JPG",
+        "bookXin":"../../../static/image/xin.png",
+            "bookId":5
+        },
+      {  "bookImg":"../../static/image/IMG_8587.JPG",
+        "bookName": "物美好吃的，巧克力面包",
+        "bookInfo":"yunzhongyang",
+        "bookTu":"../../static/image/IMG_8595.JPG",
+        "bookXin":"../../../static/image/xin.png",
+            "bookId":6
+        },
+      {  "bookImg":"../../static/image/IMG_8591.JPG",
+        "bookName": "好吃选择多种多样",
+        "bookInfo":"大樱桃叔叔",
+        "bookTu":"../../static/image/IMG_8594.JPG",
+        "bookXin":"../../../static/image/xin.png",
+        "bookId":7
+      },
+      {  "bookImg":"../../static/image/IMG_8592.JPG",
+        "bookName": "值得推荐~辣椒炒鸡蛋",
+        "bookInfo":"追寻美食",
+        "bookTu":"../../static/image/IMG_8595.JPG",
+        "bookXin":"../../../static/image/xin.png",
+        "bookId":8
+      },
+      {  "bookImg":"../../static/image/IMG_8593.JPG",
+        "bookName": "很多人在买,上前一看",
+        "bookInfo":"omengo0129",
+        "bookTu":"../../static/image/IMG_8594.JPG",
+        "bookXin":"../../../static/image/xin.png",
+        "bookId":9
+      },
+      {  "bookImg":"../../static/image/IMG_8587.JPG",
+        "bookName": "物美好吃的，巧克力面包",
+        "bookInfo":"yunzhongyang",
+        "bookTu":"../../static/image/IMG_8595.JPG",
+        "bookXin":"../../../static/image/xin.png",
+        "bookId":10
+      }
+    ]
+}
