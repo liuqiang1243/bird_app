@@ -9,8 +9,9 @@ import Order from "../components/order/Order"
 import Appraise from "../components/order/Appraise"
 import Reimburse from "../components/order/Reimburse"
 import Fulfill from "../components/order/Fulfill"
+import Message from '../components/my/message'
+import Address from '../components/my/address'
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -19,7 +20,7 @@ export default new Router({
     },
     {
       path:'/home',
-      component:home
+      component:home,
     },
     {
       path:'/merchant',
@@ -50,7 +51,17 @@ export default new Router({
     },
     {
       path:'/my',
-      component:my
+      component:my,
+      name:'my',
+      children: [{ path: 'address', component: Address}]
+    },
+    {
+      path: '/login',
+      component: Login
+    },
+    {
+      path:'/message/:id',
+      component: Message
     }
   ]
 })

@@ -27,7 +27,6 @@ export default {
     name:'Footer'
 }
 </script>
-
 <style lang="" scoped>
 .footer{
       margin: 0;
