@@ -42,10 +42,12 @@ export default {
     address(){
       const dataB = JSON.parse(sessionStorage.getItem('address'));
       console.log(dataB)
-      if(dataB){
+      if(dataB.id !=''){
          this.list.splice(dataB.id,1,dataB)
         console.log(this.list)
         sessionStorage.removeItem("address");
+      }else{
+        this.list.unshift(dataB)
       }
     }
   },

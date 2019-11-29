@@ -42,17 +42,17 @@ export default {
             let color = this.$refs.color.children
             // console.log(color[0].innerHTML)
             if(n==0){
-                this.classify = color[n].innerHTML
+                this.type = color[n].innerHTML
                 this.qq = true
                 this.qq1 = false
                 this.qq2 = false
             }else if(n==1){
-                this.classify = color[n].innerHTML
+                this.type = color[n].innerHTML
                 this.qq = false
                 this.qq1 = true
                 this.qq2 = false
             }else{
-                this.classify = color[n].innerHTML
+                this.type = color[n].innerHTML
                 this.qq = false
                 this.qq1 = false
                 this.qq2 = true
